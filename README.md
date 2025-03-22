@@ -25,7 +25,68 @@
 
 [Code_Link](https://github.com/isbrycee/T-Mamba)|**Time:2024**|**Not_Reproduction**
 
-[Paper_Link](https://arxiv.org/pdf/2404.01065)|Dataset_404
+[Paper_Link](https://arxiv.org/pdf/2404.01065)|Dataset_Loss
 
+## ⌨️4.A fully automatic AI system for tooth and alveolar bone segmentation from cone-beam CT images
 
+[Code_Link](https://github.com/ErdanC/Tooth-and-alveolar-bone-segmentation-from-CBCT)|**Time:2022**|**Not_Reproduction**
 
+[Paper_Link](https://www.nature.com/articles/s41467-022-29637-2)|Dataset_Need_Apply
+
+## ⌨️5.Tooth Decay Semantic Segmentation
+
+[Code_Link](https://github.com/Momotoculteur/Tooth-decay-semantic-segmentation)|**Time:2019**|**Not_Reproduction**|[Relative_Code](https://github.com/qubvel/segmentation_models)
+
+[Paper_Link](https://www.nature.com/articles/s41467-022-29637-2)|Dataset_Not_Found
+
+## ⌨️6.Tooth Decay Semantic Segmentation
+
+[Code_Link](https://github.com/Momotoculteur/Tooth-decay-semantic-segmentation)|**Time:2019**|**Not_Reproduction**|[Relative_Code](https://github.com/qubvel/segmentation_models)
+
+[Paper_Link](https://www.nature.com/articles/s41467-022-29637-2)|Dataset_Not_Found
+
+## ⌨️7.Tooth Decay Semantic Segmentation
+
+[Code_Link](https://github.com/huiminxiong/TSegFormer)|**Time:2024**|**Not_Reproduction**
+
+[Paper_Link(MICCAI 2023)](https://link.springer.com/chapter/10.1007/978-3-031-43987-2_41)|Dataset_Not_Found
+
+**PS_From_Author:**
+
+The preprocessing module performs the following functions:
+
+1. Randomly downsamples N surfaces from the original mesh (in our implementation, N = 10,000).
+2. Extracts 8-dimensional features for these surfaces from the mesh (details can be found in our paper).
+3. Retrieves the corresponding labels for these surfaces.
+   The features and labels are stored in the respective files, "u_aligned.json" / "l_aligned.json", representing the tooth point cloud information and segmentation labels. Each point in the point cloud corresponds one-to-one with the respective surface in the IOS mesh. You can implement this based on the provided description.
+
+Thank you for your suggestions regarding the dataset and model. However, we regret that we are unable to share the dataset and pre-trained models due to privacy concerns. We appreciate your understanding and are happy to help with any other questions or clarifications.
+
+**Data_Structure**
+
+the dataset structure in `./data/DataSet/` should be organized as follows:
+
+```
+DataSet/
+├── Case1_maxillary/
+│   ├── u_aligned.stl
+│   ├── u.txt
+│   ├── u_aligned.json
+├── Case1_mandibule/
+│   ├── l_aligned.stl
+│   ├── l.txt
+│   └── l_aligned.json
+└── ...
+```
+
+In this structure, the original data files for each case, such as "u_aligned.stl" and "u.txt," are placed together with the preprocessed file "u_aligned.json" (using "u" as an example; the same applies to "l").
+
+## ⌨️8.ToothGroupNetwork：Team CGIP‘s Code In  Miccai2022 3D Teeth Scan Segmentation and Labeling Challenge
+
+[Code_Link](https://github.com/johannx64/ToothGroupNetwork)|**Time:2024**|**Not_Reproduction**
+
+[Paper_Link](https://arxiv.org/abs/2305.18277)|[Dataset_1](https://github.com/abenhamadou/3DTeethSeg22_challenge)|[Dataset_2](https://drive.google.com/drive/folders/15oP0CZM_O_-Bir18VbSM8wRUEzoyLXby)|[CheckPoint](https://drive.google.com/drive/folders/15oP0CZM_O_-Bir18VbSM8wRUEzoyLXby)
+
+## ⌨️9.ToothGroupNetwork Implementation：A Test Code
+
+[Code_Link](https://github.com/bobo9245/CBCT_Segmentation)|**Time:2025**|**Not_Reproduction**
